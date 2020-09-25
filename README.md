@@ -12,14 +12,14 @@ Upload to firebase hoisting
 
 => IN TERMINAL:
 
-firebase login
-firebase init
-choose hoisting : configure ans deploy firebase hoisting sites
-choose an existing project
-write 'build'
-yes
-npm run build
-firebase deploy
+* [x] firebase login
+* [x] firebase init
+* [x] choose hoisting : configure ans deploy firebase hoisting sites
+* [x] choose an existing project
+* [x] write 'build'
+* [x] yes
+* [x] npm run build
+* [x] firebase deploy
 
 ## Online
 
@@ -27,4 +27,4 @@ https://netflix-clone-efb4d.web.app/
 
 ## Screenshot
 
-Regardez la home de Netflix :)
+Watch Netflix Home :)
