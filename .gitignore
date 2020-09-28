@@ -6,7 +6,10 @@
 .pnp.js
 /src/api
 /.firebase
-
+.firebaserc
+firebase.json
+/src/api/axios.js
+/src/api/requests.js
 # testing
 /coverage
 
