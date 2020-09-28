@@ -10,8 +10,7 @@ Create a clone of Netflix with React JS and deploy with Firebase database.
 - |x| Build the banner of the app
 - |x| Build Navbar
 - |x| Add firebase hosting to the app
-- |x| Add Netflix Movie Trailer POP-UPS!
-- |x| Deploy Your App to Firebase & Host it online
+- |x| Deploy the App to Netlify & Host it online
 
 ## Dependencies
 
