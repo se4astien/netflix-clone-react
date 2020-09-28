@@ -7,7 +7,7 @@ const base_url = 'https://image.tmdb.org/t/p/original';
 
 const Row = ({ title, fetchUrl, isLargeRow }) => {
   const [movies, setMovies] = useState([]);
-  const [trailerUrl, setTrailerUrl] = useState('');
+  // const [trailerUrl, setTrailerUrl] = useState('');
 
   useEffect(() => {
     async function fetchData() {
