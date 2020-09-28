@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../api/axios';
-import Youtube from 'react-youtube';
-import movieTrailer from 'movie-trailer';
+// import YouTube from 'react-youtube';
+// import movieTrailer from 'movie-trailer';
 
 const base_url = 'https://image.tmdb.org/t/p/original';
 
@@ -21,27 +21,27 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
 
   //   console.log(movies);
 
-  const opts = {
-    height: '390',
-    width: '100%',
-    playerVars: {
-      // https://developers.google.com/youtube/player_parameters
-      autoplay: 1,
-    },
-  };
+  // const opts = {
+  //   height: '390',
+  //   width: '100%',
+  //   playerVars: {
+  //     // https://developers.google.com/youtube/player_parameters
+  //     autoplay: 1,
+  //   },
+  // };
 
-  const handleClick = (movie) => {
-    if (trailerUrl) {
-      setTrailerUrl('');
-    } else {
-      movieTrailer(movie?.name || '')
-        .then((url) => {
-          const urlParams = new URLSearchParams(new URL(url).search);
-          setTrailerUrl(urlParams.get('v'));
-        })
-        .catch((err) => console.log(err));
-    }
-  };
+  // const handleClick = (movie) => {
+  //   if (trailerUrl) {
+  //     setTrailerUrl('');
+  //   } else {
+  //     movieTrailer(movie?.name || '')
+  //       .then((url) => {
+  //         const urlParams = new URLSearchParams(new URL(url).search);
+  //         setTrailerUrl(urlParams.get('v'));
+  //       })
+  //       .catch((err) => console.log(err));
+  //   }
+  // };
 
   return (
     <div className='row'>
@@ -49,7 +49,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       <div className='row-posters'>
         {movies.map((movie) => (
           <img
-            onClick={handleClick(movie)}
+            // onClick={handleClick(movie)}
             className={`row-poster ${isLargeRow && 'row-poster-large'}`}
             key={movie.id}
             src={`${base_url}${
@@ -59,7 +59,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
           />
         ))}
       </div>
-      {trailerUrl && <Youtube videoId={trailerUrl} opts={opts} />}
+      {/* {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />} */}
     </div>
   );
 };
